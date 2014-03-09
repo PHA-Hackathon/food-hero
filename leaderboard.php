@@ -7,12 +7,19 @@
 
       <!-- Example row of columns -->
       <div class="row" >
-        <div data-draft-repeat="20" style="width : 100px; float: left; border : 1px solid red; margin : 1em;">
-                
-          <img data-draft-image="70/70" data-toggle="modal" data-target="#myModal" />
-          <h2>Ranking #1</h2>
 
-        </div>
+        <?php for($count = 1; $count < 21; $count++) { ?>
+        
+          <div style="width : 100px; height : 200px; float: left; border : 1px solid #ccc; margin : 1em;">
+                  
+            <img data-draft-image="100/100" data-toggle="modal" data-target="#myModal" />
+            <span data-draft-user="first"><!-- generates full name --></span>
+            <h2>#<?php echo $count ?></h2>
+
+          </div>
+
+        <?php } ?>
+
     </div>
 
 
