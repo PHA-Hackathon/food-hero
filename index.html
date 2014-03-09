@@ -21,6 +21,8 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>     
 
 
     </head>
@@ -40,13 +42,62 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="/">Portal</a></li>
-            <li><a href="leaderboard.php">Leaderboard</a></li>
-            <li><a href="profile.php" class="btn btn-small btn-inverse active"><i class="glyphicon glyphicon-user"></i> Me</a></li>
+            <li><a href="index.html">Portal</a></li>
+            <li><a href="leaderboard.html">Leaderboard</a></li>
+            <li><a href="profile.html" class="btn btn-small btn-inverse active"><i class="glyphicon glyphicon-user"></i> Me</a></li>
           </ul>
          
         </div><!--/.navbar-collapse -->
       </div>
     </div>
 
- 
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+
+        Graph comparing classes
+
+        <canvas id="myChart" width="900" height="400"></canvas>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-4">
+        
+
+
+
+      
+      <hr>
+
+      <footer>
+        <p>&copy; Company 2013</p>
+      </footer>
+    
+    </div> <!-- /container -->        
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/chart.js"></script>
+        <script type="text/javascript" src="js/jquery.roughdraft.js"></script>        
+        <script src="js/main.js"></script>
+
+        <script>
+            $(function(){
+              $(window).roughDraft({
+                  'author' : 'bacon',
+                  'illustrator' : 'placekitten'
+              });
+            });
+        </script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
