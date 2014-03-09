@@ -1,0 +1,16 @@
+@charset "utf-8";
+/*div, form {
+  margin: 1em auto;
+}*/
+
+#speedometer {
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  border: 1px dotted red;
+}
+
+#controls {
+  width: 500px;
+}/* CSS Document */
+

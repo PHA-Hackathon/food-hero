@@ -22,9 +22,42 @@
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>     
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
+        <!-- For speedometer -->
+        <link rel="stylesheet" type="text/css" href="css/speedometer.css" media="screen" />
 
+        <script type="text/javascript" src="js/vendor/speedometer/xcanvas.js"></script>
+        <script type="text/javascript" src="js/vendor/speedometer/tbe.js"></script>
+
+        <script type="text/javascript" src="js/vendor/speedometer/digitaldisplay.js"></script>
+        <script type="text/javascript" src="js/vendor/speedometer/speedometer.js"></script>
+        <script type="text/javascript" src="js/vendor/speedometer/default.js"></script>        
+        <script type="text/javascript" src="js/vendor/speedometer/kitsch.js"></script>
+
+        <script type="text/javascript" src="js/vendor/speedometer/example.js"></script>
+        <script type="text/javascript" src="js/vendor/speedometer/controls.js"></script>
+        <script type="text/javascript">
+          var speedometer;
+          // Explicit onready listener for modern browsers. If you use a JS framework,
+          // you should replace this code with your toolkit's "onReady" helpers (e.g.
+          // $(document).ready() on jQuery, Event.observe('dom:loaded') on prototype,
+          // and so on.
+          document.addEventListener ("DOMContentLoaded", function() {
+            document.removeEventListener ("DOMContentLoaded", arguments.callee, false);
+
+            // Check out configuration and API on GitHub Wiki:
+            // http://wiki.github.com/vjt/canvas-speedometer
+            speedometer = new Speedometer ('speedometer', {theme: 'default', value: 40});
+            speedometer.draw ();
+            speedometer.addEventListener ('speedometer:animateend', function () {
+              controls.start ();
+            });
+
+            var controls = new Controls ();
+            controls.start ();
+          }, false);
+        </script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -70,9 +103,9 @@
 
     <div class="container">
 
-      <h2>Total Score: <span data-draft-number="2"></span></h2>
+      <div id="speedometer"></div>
 
-      <canvas id="myChart" width="900" height="200"></canvas>
+      <div><canvas id="myChart" class="centeredChart" width="900" height="200"></canvas></div>
 
       <!-- Example row of columns -->
       <div class="row" data-draft-repeat="3" style="margin-top : 3em;">
