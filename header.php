@@ -40,7 +40,7 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="/">Dashboard</a></li>
+            <li><a href="/">Dashboard</a></li>
             <li class="active"><a href="leaderboard.php">Leaderboard</a></li>
             <li><a href="profile.php">Profile</a></li>
             <li class="dropdown">
