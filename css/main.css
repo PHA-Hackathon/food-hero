@@ -2,6 +2,10 @@
    Author's custom styles
    ========================================================================== */
 
+.jumbotron {
+  background-color: #fff;
+}
+
 .centeredChart {
   margin: 0 auto;
   display: block;
