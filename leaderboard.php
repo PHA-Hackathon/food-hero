@@ -23,8 +23,5 @@
     </div>
 
 
-      </div>
-      <!-- End container -->
-
 
       <?php include('footer.php') ?>

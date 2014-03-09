@@ -21,6 +21,8 @@
 
       <h2>Total Score: <span data-draft-number="2"></span></h2>
 
+      <canvas id="myChart" width="900" height="200"></canvas>
+
       <!-- Example row of columns -->
       <div class="row" data-draft-repeat="3" style="margin-top : 3em;">
         <div class="col-lg-4">
@@ -78,9 +80,6 @@
       </div>
     </div>
 
-
-      </div>
-      <!-- End container -->
 
 
       <?php include('footer.php') ?>
