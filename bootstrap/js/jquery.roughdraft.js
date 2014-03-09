@@ -601,7 +601,7 @@
        * uses a php port of 'Faker', to generate random content
        */
       $.ajax({
-        url: 'http://faker.dev/?number=25',
+        url: 'http://faker.civicagency.org/?number=25',
         dataType: 'jsonp',
         type: opt.ajaxType,
         timeout: opt.timeout,
