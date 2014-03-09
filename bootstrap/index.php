@@ -6,6 +6,8 @@
 
         Graph comparing classes
 
+        <canvas id="myChart" width="900" height="400"></canvas>
+
       </div>
     </div>
 
