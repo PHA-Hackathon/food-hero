@@ -40,8 +40,8 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="/">School</a></li>
-            <li><a href="leaderboard.php">Class</a></li>
+            <li><a href="/">Portal</a></li>
+            <li><a href="leaderboard.php">Leaderboard</a></li>
             <li><a href="profile.php" class="btn btn-small btn-inverse active"><i class="glyphicon glyphicon-user"></i> Me</a></li>
           </ul>
          
