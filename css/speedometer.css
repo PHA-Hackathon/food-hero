@@ -4,10 +4,9 @@
 }*/
 
 #speedometer {
-  margin: 0 auto;
+  margin: 0 auto 30px;
   width: 300px;
   height: 300px;
-  border: 1px dotted red;
 }
 
 #controls {
